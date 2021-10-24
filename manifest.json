@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "name": "Development Extension",
+  "description": "Opens a tab and fills a form",
+  "permissions": [
+    "tabs",
+    "https://www.scourt.go.kr/portal/information/events/search/search.jsp",
+    "https://safind.scourt.go.kr/sf/mysafind.jsp"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "externally_connectable": {
+    "matches": [
+      "*://localhost/*"
+    ]
+  }
+}
